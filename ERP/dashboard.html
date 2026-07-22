@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Dashboard - NCU Student Portal</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-left">
+    <button class="sidebar-toggle"><i class="fa-solid fa-bars"></i></button>
+    <div class="ncu-logo">
+      <span class="arc"></span>
+      <div class="wordmark">
+        <div class="the">THE</div>
+        <div class="main">NORTHCAP<br>UNIVERSITY</div>
+        <div class="tag">Formerly ITM University, Gurugram</div>
+      </div>
+    </div>
+  </div>
+  <div class="topbar-right">
+    <button class="icon-btn"><i class="fa-solid fa-gear"></i></button>
+    <button class="icon-btn"><i class="fa-regular fa-bell"></i><span class="dot"></span></button>
+    <button class="icon-btn danger"><i class="fa-solid fa-power-off"></i></button>
+  </div>
+</header>
+
+<div class="layout">
+  <aside class="sidebar">
+    <div class="profile-card">
+      <div class="avatar">SN</div>
+      <div class="name">STUDENT NAME</div>
+      <div class="roll">00XXX000</div>
+      <div class="degree">BACHELOR OF TECHNOLOGY<br>(COMPUTER SCIENCE AND ENGINEERING)</div>
+      <div class="meta">Semester : 3 &nbsp;|&nbsp; Section - A</div>
+    </div>
+
+    <nav class="nav-section">
+      <a class="nav-item active" href="dashboard.html">
+        <span class="ic"><i class="fa-solid fa-table-cells-large"></i></span> Dashboard
+      </a>
+
+      <div class="nav-group">
+        <div class="nav-item"><span class="ic"><i class="fa-solid fa-list"></i></span> My Links <span class="chev"><i class="fa-solid fa-chevron-right"></i></span></div>
+      </div>
+
+      <div class="nav-group open">
+        <div class="nav-item"><span class="ic"><i class="fa-solid fa-graduation-cap"></i></span> Academic <span class="chev"><i class="fa-solid fa-chevron-right"></i></span></div>
+        <div class="sub-list">
+          <a class="nav-item sub" href="#"><span class="ic"><i class="fa-solid fa-clipboard-list"></i></span> Semester Registration</a>
+          <a class="nav-item sub" href="attendance.html"><span class="ic"><i class="fa-solid fa-calendar-check"></i></span> Attendance Summary</a>
+          <a class="nav-item sub" href="feedback.html"><span class="ic"><i class="fa-solid fa-comment-dots"></i></span> Faculty Feedback</a>
+        </div>
+      </div>
+
+      <div class="nav-group">
+        <div class="nav-item"><span class="ic"><i class="fa-solid fa-sitemap"></i></span> Examination <span class="chev"><i class="fa-solid fa-chevron-right"></i></span></div>
+        <div class="sub-list">
+          <a class="nav-item sub" href="admit-card.html"><span class="ic"><i class="fa-solid fa-id-card"></i></span> Admit Card</a>
+          <a class="nav-item sub" href="exams.html"><span class="ic"><i class="fa-solid fa-file-lines"></i></span> My Exams</a>
+          <a class="nav-item sub" href="minor-marks.html"><span class="ic"><i class="fa-solid fa-file-lines"></i></span> Minor Test Marks</a>
+          <a class="nav-item sub" href="results.html"><span class="ic"><i class="fa-solid fa-file-lines"></i></span> Results</a>
+        </div>
+      </div>
+
+      <div class="nav-group">
+        <div class="nav-item"><span class="ic"><i class="fa-solid fa-indian-rupee-sign"></i></span> Fees <span class="chev"><i class="fa-solid fa-chevron-right"></i></span></div>
+        <div class="sub-list">
+          <a class="nav-item sub" href="fees.html"><span class="ic"><i class="fa-solid fa-credit-card"></i></span> Fee Payment</a>
+          <a class="nav-item sub" href="transactions.html"><span class="ic"><i class="fa-solid fa-receipt"></i></span> Transaction Summary</a>
+        </div>
+      </div>
+    </nav>
+  </aside>
+
+  <main class="main">
+    <h1 class="page-title">Dashboard</h1>
+    <div class="breadcrumb">Dashboard</div>
+
+    <div class="welcome-banner">
+      <h2>Welcome Back, Student <i class="fa-regular fa-hand"></i></h2>
+      <p>Semester 3 &middot; Section A &middot; Have a great day of classes!</p>
+    </div>
+
+    <div class="stat-row">
+      <div class="stat-card">
+        <div class="stat-icon" style="background:var(--ncu-blue)"><i class="fa-solid fa-calendar-check"></i></div>
+        <div>
+          <div class="stat-value">92%</div>
+          <div class="stat-label">Attendance</div>
+        </div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon" style="background:var(--ncu-green)"><i class="fa-solid fa-book"></i></div>
+        <div>
+          <div class="stat-value">6</div>
+          <div class="stat-label">Registered Courses</div>
+        </div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon" style="background:var(--ncu-orange)"><i class="fa-solid fa-triangle-exclamation"></i></div>
+        <div>
+          <div class="stat-value">1</div>
+          <div class="stat-label">Backlog Course</div>
+        </div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon" style="background:var(--ncu-red)"><i class="fa-solid fa-file-pen"></i></div>
+        <div>
+          <div class="stat-value">0</div>
+          <div class="stat-label">Upcoming Exams</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid-2col">
+      <div>
+        <div class="card">
+          <div class="card-header">
+            <h3><i class="fa-regular fa-calendar-days"></i> Timetable Schedule</h3>
+          </div>
+          <table class="data-table">
+            <thead>
+              <tr><th>Date</th><th colspan="4">Schedule</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td rowspan="4">29-Jul-2026</td>
+                <td>
+                  <div class="subject-row">
+                    <div>
+                      <div class="code">CSL225 - PROGRAMMING FOR DATA SCIENCE</div>
+                      <div class="time"><i class="fa-regular fa-clock"></i> 9:30 - 10:20 AM &nbsp; <i class="fa-solid fa-location-dot"></i> RN 129</div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="subject-row">
+                    <div>
+                      <div class="code">MAL253 - ENGG. MATHS III</div>
+                      <div class="time"><i class="fa-regular fa-clock"></i> 10:30 - 11:20 AM &nbsp; <i class="fa-solid fa-location-dot"></i> RN 129</div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="subject-row">
+                    <div>
+                      <div class="code">CLL140 - EFFECTIVE COMMUNICATION-II</div>
+                      <div class="time"><i class="fa-regular fa-clock"></i> 12:30 - 2:20 PM &nbsp; <i class="fa-solid fa-location-dot"></i> RN 010</div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="subject-row">
+                    <div>
+                      <div class="code">CSL214N - DBMS</div>
+                      <div class="time"><i class="fa-regular fa-clock"></i> 2:30 - 3:20 PM &nbsp; <i class="fa-solid fa-location-dot"></i> RN 129</div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <h3><i class="fa-solid fa-triangle-exclamation"></i> Backlog Courses Class Details</h3>
+          </div>
+          <table class="data-table">
+            <thead>
+              <tr><th>Course Details</th><th>Section Details</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>MAL151 - ENGINEERING MATHS-I</td>
+                <td>Course Coordinator - <span class="badge badge-red">Pending Allocation</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div>
+        <div class="card">
+          <div class="card-header"><h3><i class="fa-regular fa-clock"></i> Today's Class</h3></div>
+          <div class="today-item">
+            <div class="subj-icon" style="background:var(--ncu-blue)">MJ</div>
+            <div>
+              <div class="subj-name">Engg. Maths III</div>
+              <div class="subj-time">8:30 - 9:20 AM &middot; RN 129</div>
+            </div>
+            <span class="status completed">Completed</span>
+          </div>
+          <div class="today-item">
+            <div class="subj-icon" style="background:var(--ncu-green)">IJ</div>
+            <div>
+              <div class="subj-name">Intro to Java</div>
+              <div class="subj-time">9:30 - 10:20 AM &middot; RN 129</div>
+            </div>
+            <span class="status completed">Completed</span>
+          </div>
+          <div class="today-item">
+            <div class="subj-icon" style="background:var(--ncu-orange)">DA</div>
+            <div>
+              <div class="subj-name">DE &amp; CA</div>
+              <div class="subj-time">1:30 - 2:20 PM &middot; RN 129</div>
+            </div>
+            <span class="status inprogress">In Progress</span>
+          </div>
+        </div>
+
+        <div class="card calendar">
+          <div class="cal-head">
+            <button><i class="fa-solid fa-chevron-left"></i></button>
+            <span>July 2026</span>
+            <button><i class="fa-solid fa-chevron-right"></i></button>
+          </div>
+          <div class="cal-grid">
+            <div class="dow">Su</div><div class="dow">Mo</div><div class="dow">Tu</div><div class="dow">We</div><div class="dow">Th</div><div class="dow">Fr</div><div class="dow">Sa</div>
+            <div class="day muted">28</div><div class="day muted">29</div><div class="day muted">30</div><div class="day">1</div><div class="day">2</div><div class="day">3</div><div class="day">4</div>
+            <div class="day">5</div><div class="day">6</div><div class="day">7</div><div class="day">8</div><div class="day">9</div><div class="day">10</div><div class="day">11</div>
+            <div class="day">12</div><div class="day">13</div><div class="day">14</div><div class="day">15</div><div class="day">16</div><div class="day">17</div><div class="day">18</div>
+            <div class="day">19</div><div class="day">20</div><div class="day">21</div><div class="day">22</div><div class="day today">23</div><div class="day">24</div><div class="day">25</div>
+            <div class="day">26</div><div class="day">27</div><div class="day">28</div><div class="day">29</div><div class="day">30</div><div class="day">31</div><div class="day muted">1</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
