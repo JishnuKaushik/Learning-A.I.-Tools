@@ -15,15 +15,15 @@
     </div>
     <nav class="sidebar-nav">
       <a href="#">Introduction</a>
-      <a href="#">Basics</a>
+      <a href="#">Basics <span class="chev">&rsaquo;</span></a>
       <a href="#" class="active">Advertising <span class="chev">&rsaquo;</span></a>
-      <a href="#">Products</a>
+      <a href="#">Products <span class="chev">&rsaquo;</span></a>
       <a href="#">Resources</a>
       <a href="#">Help Center</a>
       <a href="#">Blog</a>
       <a href="#">Premium Business</a>
     </nav>
-    <a href="#" class="sidebar-signin">Sign in</a>
+    <a href="#" class="sidebar-signin">Sign In</a>
   </aside>
 
   <main class="content">
@@ -34,24 +34,43 @@
         <h1 class="hero-heading">Real-time conversations.<br>Real results</h1>
 
         <div class="hero-panel">
+          <svg class="hero-lines" preserveAspectRatio="none">
+            <line x1="0" y1="50%" x2="100%" y2="50%" />
+            <line x1="50%" y1="0" x2="50%" y2="100%" />
+            <line x1="50%" y1="50%" x2="0" y2="0" />
+            <line x1="50%" y1="50%" x2="100%" y2="0" />
+            <line x1="50%" y1="50%" x2="0" y2="100%" />
+            <line x1="50%" y1="50%" x2="100%" y2="100%" />
+          </svg>
+
           <div class="hero-card">
             <div class="hero-card-label">Testimonials</div>
-            <div class="hero-card-body" style="font-size:1.5rem;font-weight:600;">00 000</div>
+            <div class="hero-card-body">
+              <div class="testimonial-glyphs"><span></span><span></span></div>
+              <div class="testimonial-stat"><b>10x ROAS</b> <span>average, never below 4x weekly</span></div>
+            </div>
           </div>
-          <div class="hero-card">
+          <div class="hero-card hero-card--performance">
             <div class="hero-card-label">Performance</div>
-            <div class="hero-card-body"><div class="perf-bars"><span></span><span></span><span></span></div></div>
+            <div class="hero-card-body">
+              <div class="perf-bars">
+                <div class="perf-bar"><span class="dot"></span><span class="bar"></span></div>
+                <div class="perf-bar"><span class="dot"></span><span class="bar"></span></div>
+                <div class="perf-bar"><span class="dot"></span><span class="bar"></span></div>
+                <div class="perf-bar"><span class="dot"></span><span class="bar"></span></div>
+              </div>
+            </div>
           </div>
           <div class="hero-card">
             <div class="hero-card-label">Offer</div>
-            <div class="hero-card-body" style="flex-direction:column;align-items:flex-start;justify-content:flex-end;">
+            <div class="hero-card-body">
               <div class="offer-amount">$500</div>
               <div class="offer-sub">Ad Credit</div>
             </div>
           </div>
         </div>
 
-        <p class="hero-description">Reach high intent audiences, participate in real time conversations, and drive measurable business results with X Ads.</p>
+        <p class="hero-description">Reach high-intent audiences, participate in real-time conversations, and drive measurable business results with X Ads.</p>
 
         <div class="btn-row">
           <button class="btn btn-primary">Get started</button>
@@ -67,37 +86,34 @@
 
         <div class="feature-grid">
           <div class="feature-item">
-            <div class="feature-icon"><svg viewBox="0 0 24 24" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M12 3v18M3 12h18"/></svg></div>
             <div class="feature-title">Real-time conversations</div>
-            <div class="feature-desc">Reach people while they're researching, comparing, and deciding on what to buy, download, try, or visit.</div>
+            <div class="feature-desc">Reach people while they're researching, comparing, and deciding on what to buy, book, download, try, or visit.</div>
+            <div class="feature-icon"><svg viewBox="0 0 24 24" stroke-width="1"><circle cx="12" cy="7" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="12" cy="17" r="1.5"/><path d="M4 7h5M15 7h5M4 12h5M15 12h5M4 17h5M15 17h5" stroke-dasharray="1 2"/><rect x="2" y="6" width="2" height="2"/><rect x="20" y="6" width="2" height="2"/><rect x="2" y="11" width="2" height="2"/><rect x="20" y="11" width="2" height="2"/></svg></div>
           </div>
           <div class="feature-item">
-            <div class="feature-icon"><svg viewBox="0 0 24 24" stroke-width="1.5"><circle cx="7" cy="7" r="2.5"/><circle cx="17" cy="7" r="2.5"/><circle cx="12" cy="17" r="2.5"/><path d="M7 9.5v3M17 9.5v3M12 14.5v0"/></svg></div>
             <div class="feature-title">Reach influential audiences</div>
-            <div class="feature-desc">Connect with high value audiences who shape opinions, decisions, and spending.</div>
+            <div class="feature-desc">Connect with high-value audiences who shape opinions, decisions, and spending.</div>
+            <div class="feature-icon"><svg viewBox="0 0 24 24" stroke-width="1"><circle cx="17" cy="17" r="2"/><circle cx="4" cy="6" r="1"/><circle cx="9" cy="5" r="1.5"/><path d="M17 17L4 6M17 17L9 5M17 17L16 8M17 17L4 15" stroke-dasharray="1 2"/><rect x="15" y="7" width="2" height="2"/><rect x="3" y="14" width="2" height="2"/></svg></div>
           </div>
           <div class="feature-item">
-            <div class="feature-icon"><svg viewBox="0 0 24 24" stroke-width="1.5"><path d="M12 2v6M12 16v6M2 12h6M16 12h6"/></svg></div>
             <div class="feature-title">Own the moment</div>
-            <div class="feature-desc">Show up where news breaks, products launch, hands start, and attention builds.</div>
+            <div class="feature-desc">Show up where news breaks, products launch, trends start, and attention builds.</div>
+            <div class="feature-icon"><svg viewBox="0 0 24 24" stroke-width="1"><rect x="10" y="10" width="4" height="4"/><circle cx="12" cy="12" r="1" fill="currentColor" stroke="none"/><path d="M10 12H2M22 12h-8M12 10V2M12 22v-8M6 6l4 4M18 6l-4 4M6 18l4-4M18 18l-4-4"/></svg></div>
           </div>
-        </div>
-
-        <div class="feature-grid">
           <div class="feature-item">
-            <div class="feature-icon"><svg viewBox="0 0 24 24" stroke-width="1.5"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r=".5"/></svg></div>
             <div class="feature-title">Earn attention</div>
             <div class="feature-desc">Place your message inside conversations people actively choose to engage with.</div>
+            <div class="feature-icon"><svg viewBox="0 0 24 24" stroke-width="1"><rect x="9.5" y="9.5" width="5" height="5" transform="rotate(45 12 12)"/><circle cx="4" cy="12" r="3" stroke-dasharray="2 2"/><circle cx="20" cy="12" r="3" stroke-dasharray="2 2"/><circle cx="12" cy="4" r="3" stroke-dasharray="2 2"/><circle cx="12" cy="20" r="3" stroke-dasharray="2 2"/></svg></div>
           </div>
           <div class="feature-item">
-            <div class="feature-icon"><svg viewBox="0 0 24 24" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="1.5"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/></svg></div>
             <div class="feature-title">Precise targeting</div>
-            <div class="feature-desc">Reach the right audience with keywords, followers, location, and conversation topics.</div>
+            <div class="feature-desc">Reach the right audience with keywords, followers, location, and conversation signals.</div>
+            <div class="feature-icon"><svg viewBox="0 0 24 24" stroke-width="1"><circle cx="12" cy="12" r="9" stroke-dasharray="2 2"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1" fill="currentColor" stroke="none"/><path d="M17 9l2-2M17 9l3 1"/></svg></div>
           </div>
           <div class="feature-item">
-            <div class="feature-icon"><svg viewBox="0 0 24 24" stroke-width="1.5"><path d="M12 3l8 4.5v9L12 21l-8-4.5v-9L12 3z"/></svg></div>
             <div class="feature-title">Built for every business</div>
             <div class="feature-desc">Start with any budget, learn fast, and scale campaigns.</div>
+            <div class="feature-icon"><svg viewBox="0 0 24 24" stroke-width="1"><path d="M4 8l4-3 4 3 4-3 4 3" stroke-dasharray="1 2"/><path d="M8 8v3l4 2 4-2V8" stroke-dasharray="1 2"/><rect x="9" y="17" width="6" height="5"/><circle cx="12" cy="19.5" r="1" fill="currentColor" stroke="none"/></svg></div>
           </div>
         </div>
       </section>
@@ -108,18 +124,18 @@
           <h2 class="section-heading">Built for business impact<br><span class="dim">Backed by measurable results</span></h2>
         </div>
         <div class="btn-row" style="margin-bottom:2.5rem;">
-          <button class="btn btn-primary">Create an ad</button>
+          <button class="btn btn-primary">Create your Ad</button>
           <button class="btn btn-secondary">Talk to an Ads expert</button>
         </div>
 
         <div class="stats-grid">
-          <div class="stat-card tall">
-            <div class="stat-value">0.0x</div>
-            <div class="stat-label">New customer ROAS for many apparel advertisers using the new X Ads Manager.</div>
-          </div>
           <div class="stat-card">
+            <div class="stat-value">0.0x</div>
+            <div class="stat-label">New customer ROAS for men's apparel advertisers using the new X Ads Manager.</div>
+          </div>
+          <div class="stat-card tall">
             <div class="stat-value">0%</div>
-            <div class="stat-label">More conversions from new customers compared to other platforms for retail advertisers.</div>
+            <div class="stat-label">More conversions from new customers compared to other platforms for retail advertisers on X.</div>
           </div>
           <div class="stat-card">
             <div class="stat-value">0.00x</div>
@@ -130,8 +146,12 @@
             <div class="stat-label">Of net-new customers for retailer advertisers came from the new X Ads Manager.</div>
           </div>
           <div class="quote-card">
+            <div class="quote-head">
+              <span class="quote-logo">&#9698; SKYTECH<br>GAMING</span>
+              <span class="quote-dots"><i></i><i class="on"></i><i></i></span>
+            </div>
             <p class="quote-text">&ldquo;Despite the challenges facing the PC industry, X consistently delivered results. We averaged 10x ROAS across the quarter and never dropped below 4x in any single week.&rdquo;</p>
-            <div class="quote-attribution">Skydance Gaming</div>
+            <div class="quote-attribution">Skytech Gaming</div>
           </div>
         </div>
       </section>
@@ -143,53 +163,46 @@
         </div>
 
         <div class="format-grid">
-          <div class="format-card">
-            <div class="format-media"><svg viewBox="0 0 24 24" stroke-width="1.5"><path d="M8 6l10 6-10 6V6z"/></svg></div>
-            <div class="format-body">
-              <div class="format-index">01</div>
-              <div class="format-title">Amplify</div>
-              <div class="format-desc">Reach engaged audiences alongside premium video content, ideal for awareness and product launches.</div>
-            </div>
+          <div class="format-media fmt-1"><svg viewBox="0 0 24 24" stroke-width="1.5"><path d="M8 6l10 6-10 6V6z"/></svg></div>
+          <div class="format-text fmt-1t">
+            <div class="format-index">01</div>
+            <div class="format-title">Amplify</div>
+            <div class="format-desc">Reach engaged audiences alongside premium video content. Ideal for awareness and product launches.</div>
           </div>
-          <div class="format-card">
-            <div class="format-media"><svg viewBox="0 0 24 24" stroke-width="1.5"><rect x="4" y="5" width="16" height="14" rx="1"/><path d="M4 15l4-4 3 3 5-6 4 5"/></svg></div>
-            <div class="format-body">
-              <div class="format-index">02</div>
-              <div class="format-title">Image + carousel ads</div>
-              <div class="format-desc">Showcase up to six products, or stories with eye-catching creative. Perfect for promotions and traffic.</div>
-            </div>
+
+          <div class="format-media fmt-2"><svg viewBox="0 0 24 24" stroke-width="1.5"><rect x="4" y="5" width="16" height="14" rx="1"/><path d="M4 15l4-4 3 3 5-6 4 5"/></svg></div>
+          <div class="format-text fmt-2t">
+            <div class="format-index">02</div>
+            <div class="format-title">Image + carousel ads</div>
+            <div class="format-desc">Showcase up to six products, services, or stories with eye-catching creative. Perfect for promotions and traffic.</div>
           </div>
-          <div class="format-card wide">
-            <div class="format-media"><svg viewBox="0 0 24 24" stroke-width="1.5"><rect x="3" y="4" width="18" height="16" rx="1"/><path d="M3 9h18M9 9v11"/></svg></div>
-            <div class="format-body">
-              <div class="format-index">03</div>
-              <div class="format-title">Collection + shoppable ads</div>
-              <div class="format-desc">Help people discover and shop products. Great for ecommerce brands, catalog, and seasonal campaigns.</div>
-            </div>
+
+          <div class="format-media fmt-3 wide"><svg viewBox="0 0 24 24" stroke-width="1.5"><rect x="3" y="4" width="18" height="16" rx="1"/><path d="M3 9h18M9 9v11"/></svg></div>
+          <div class="format-text fmt-3t">
+            <div class="format-index">03</div>
+            <div class="format-title">Collection + shoppable ads</div>
+            <div class="format-desc">Help people discover and shop products. Great for ecommerce brands, catalogs, and seasonal campaigns.</div>
           </div>
-          <div class="format-card">
-            <div class="format-media"><svg viewBox="0 0 24 24" stroke-width="1.5"><circle cx="12" cy="8" r="3"/><path d="M5 20c0-4 3-6 7-6s7 2 7 6"/></svg></div>
-            <div class="format-body">
-              <div class="format-index">04</div>
-              <div class="format-title">Promoted posts</div>
-              <div class="format-desc">Turn top-performing content into ads with a single click, increasing reach and engagement instantly.</div>
-            </div>
+
+          <div class="format-media fmt-4"><svg viewBox="0 0 24 24" stroke-width="1.5"><circle cx="12" cy="8" r="3"/><path d="M5 20c0-4 3-6 7-6s7 2 7 6"/></svg></div>
+          <div class="format-text fmt-4t">
+            <div class="format-index">04</div>
+            <div class="format-title">Promoted posts</div>
+            <div class="format-desc">Turn top-performing content into ads in a few clicks. Increase reach and engagement instantly.</div>
           </div>
-          <div class="format-card">
-            <div class="format-media"><svg viewBox="0 0 24 24" stroke-width="1.5"><rect x="3" y="3" width="8" height="8" rx="1"/><rect x="13" y="3" width="8" height="8" rx="1"/><rect x="3" y="13" width="8" height="8" rx="1"/><rect x="13" y="13" width="8" height="8" rx="1"/></svg></div>
-            <div class="format-body">
-              <div class="format-index">05</div>
-              <div class="format-title">Dynamic product ads</div>
-              <div class="format-desc">Automatically promote products from your catalog, ideal for retargeting shoppers and driving sales.</div>
-            </div>
+
+          <div class="format-media fmt-5"><svg viewBox="0 0 24 24" stroke-width="1.5"><rect x="3" y="3" width="8" height="8" rx="1"/><rect x="13" y="3" width="8" height="8" rx="1"/><rect x="3" y="13" width="8" height="8" rx="1"/><rect x="13" y="13" width="8" height="8" rx="1"/></svg></div>
+          <div class="format-text fmt-5t">
+            <div class="format-index">05</div>
+            <div class="format-title">Dynamic product ads</div>
+            <div class="format-desc">Automatically promote products from your catalog. Ideal for retargeting shoppers and driving sales.</div>
           </div>
-          <div class="format-card wide">
-            <div class="format-media"><svg viewBox="0 0 24 24" stroke-width="1.5"><path d="M12 3v18M5 10l7-7 7 7"/></svg></div>
-            <div class="format-body">
-              <div class="format-index">06</div>
-              <div class="format-title">Boost existing posts</div>
-              <div class="format-desc">Promote catalog products based on shopping behavior. Perfect for driving sales at scale.</div>
-            </div>
+
+          <div class="format-media fmt-6 wide"><svg viewBox="0 0 24 24" stroke-width="1.5"><path d="M12 3v18M5 10l7-7 7 7"/></svg></div>
+          <div class="format-text fmt-6t">
+            <div class="format-index">06</div>
+            <div class="format-title">Boost existing posts</div>
+            <div class="format-desc">Promote catalog products based on shopping behavior. Perfect for driving sales at scale.</div>
           </div>
         </div>
       </section>
@@ -198,8 +211,14 @@
       <section class="contact">
         <div class="contact-section">
           <div class="contact-visual">
+            <svg class="hero-lines" preserveAspectRatio="none">
+              <circle cx="20%" cy="35%" r="45%" fill="none" stroke-dasharray="3 4" />
+              <circle cx="20%" cy="35%" r="28%" fill="none" stroke-dasharray="3 4" />
+              <line x1="20%" y1="-10%" x2="55%" y2="90%" />
+              <line x1="14%" y1="-10%" x2="49%" y2="90%" />
+            </svg>
             <div>
-              <div class="contact-visual-heading">Connect with an X Ads specialist</div>
+              <div class="contact-visual-heading">Connect with an<br>X Ads specialist</div>
               <p class="contact-visual-desc">Our team will reach out within one business day to help set up your first campaign, recommend strategy, or answer questions.</p>
             </div>
           </div>
@@ -216,19 +235,19 @@
               </div>
               <div class="form-field">
                 <label class="form-label">Company Name</label>
-                <input class="form-input" type="text" placeholder="Acme Inc." />
+                <input class="form-input" type="text" placeholder="Acme Inc" />
               </div>
               <div class="form-field">
                 <label class="form-label">Company Handle</label>
-                <input class="form-input" type="text" placeholder="@acmeinc" />
+                <input class="form-input" type="text" placeholder="@somehandle" />
               </div>
               <div class="form-field full">
                 <label class="form-label">Business Email Address</label>
-                <input class="form-input" type="email" placeholder="jane@acmeinc.com" />
+                <input class="form-input" type="email" placeholder="jane@example.com" />
               </div>
               <div class="form-field">
                 <label class="form-label">Phone Number</label>
-                <input class="form-input" type="tel" placeholder="+1 (555) 000-0000" />
+                <input class="form-input" type="tel" placeholder="555-0100" />
               </div>
               <div class="form-field">
                 <label class="form-label">Payment Method</label>
@@ -249,13 +268,14 @@
               </div>
               <div class="form-field full">
                 <label class="form-label">How can we help you?</label>
-                <textarea class="form-textarea" placeholder="Looking for help with ads."></textarea>
+                <textarea class="form-textarea" placeholder="Looking for help with ads"></textarea>
               </div>
             </div>
 
-            <p class="form-disclaimer">By submitting this form, you agree to receive marketing communications from X. Your information will be used in accordance with X's Privacy Policy in relation to this and future communications.</p>
-
-            <button type="submit" class="btn btn-primary">Get support</button>
+            <div class="form-footer">
+              <p class="form-disclaimer">By submitting this form, you agree to receive various marketing communications via email, telephone and/or text message from X and our official sales partners.</p>
+              <button type="submit" class="btn btn-primary">Get support</button>
+            </div>
           </form>
         </div>
       </section>
@@ -269,8 +289,8 @@
 
           <div class="faq-list">
             <div class="faq-item open">
-              <button class="faq-question">Is there a minimum budget to advertise?<span class="plus">+</span></button>
-              <div class="faq-answer"><p>No. You can start with a budget that fits your goals and scale up as you go. Add a payment method in Ads Manager &mdash; you're only charged when ads run.</p></div>
+              <button class="faq-question">Is there a minimum budget to advertise?<span class="plus">&minus;</span></button>
+              <div class="faq-answer"><p>No. You can start with a budget that fits your goals and scale up as you learn what performs best. Add a payment method in Ads Manager&mdash;you're only charged when ads run.</p></div>
             </div>
             <div class="faq-item">
               <button class="faq-question">How do I get started?<span class="plus">+</span></button>
@@ -300,65 +320,68 @@
         </div>
       </section>
 
-      <footer>
-        <div class="footer-top">
-          <div class="footer-logo">
-            <svg viewBox="0 0 24 24"><path d="M18.9 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.65h2.039L6.486 3.24H4.298Z"/></svg>
-          </div>
-          <div class="footer-cols">
-            <div class="footer-col">
-              <h4>X Platform</h4>
-              <a href="#">X App</a>
-              <a href="#">Status</a>
-              <a href="#">Accessibility</a>
-              <a href="#">Protect your voice</a>
-              <a href="#">Privacy center</a>
-              <a href="#">Transparency center</a>
-              <a href="#">Download the X app</a>
-              <a href="#">Try Grok now</a>
-            </div>
-            <div class="footer-col">
-              <h4>X Corp</h4>
-              <a href="#">About the company</a>
-              <a href="#">Company news</a>
-              <a href="#">Brand toolkit</a>
-              <a href="#">Jobs and internships</a>
-              <a href="#">Investors</a>
-            </div>
-            <div class="footer-col">
-              <h4>Help</h4>
-              <a href="#">Help Center</a>
-              <a href="#">Using X</a>
-              <a href="#">Managing your account</a>
-              <a href="#">Rules and policies</a>
-              <a href="#">Contact us</a>
-            </div>
-            <div class="footer-col">
-              <h4>Developer resources</h4>
-              <a href="#">Developer home</a>
-              <a href="#">Documentation</a>
-              <a href="#">Forums</a>
-              <a href="#">Communities</a>
-              <a href="#">Engineering blog</a>
-              <a href="#">Developer terms</a>
-            </div>
-            <div class="footer-col">
-              <h4>Business resources</h4>
-              <a href="#">Advertise</a>
-              <a href="#">X for business</a>
-              <a href="#">Resources and guides</a>
-            </div>
-          </div>
-        </div>
-        <div class="footer-bottom">
-          <span>&copy; 2026 X Corp.</span>
-          <span>English</span>
-        </div>
-      </footer>
-
     </div>
   </main>
 </div>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-utility">
+      <div class="theme-icons">
+        <svg viewBox="0 0 24 24" stroke-width="1.5"><rect x="3" y="4" width="18" height="13" rx="1"/><path d="M8 21h8M12 17v4"/></svg>
+        <svg viewBox="0 0 24 24" stroke-width="1.5"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4 12H2M22 12h-2M5 5l1.5 1.5M17.5 17.5L19 19M5 19l1.5-1.5M17.5 6.5L19 5"/></svg>
+        <svg viewBox="0 0 24 24" stroke-width="1.5"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></svg>
+      </div>
+      <div class="lang-select">English <span class="chev">&darr;</span></div>
+      <div class="footer-copy">&copy; 2026 X Corp.</div>
+    </div>
+
+    <div class="footer-cols">
+      <div class="footer-col">
+        <h4>X Platform</h4>
+        <a href="#">X.com</a>
+        <a href="#">Status</a>
+        <a href="#">Accessibility</a>
+        <a href="#">Embed a post</a>
+        <a href="#">Privacy center</a>
+        <a href="#">Transparency center</a>
+        <a href="#">Download the X app</a>
+        <a href="#">Try Grok.com</a>
+      </div>
+      <div class="footer-col">
+        <h4>X Corp</h4>
+        <a href="#">About the company</a>
+        <a href="#">Company news</a>
+        <a href="#">Brand toolkit</a>
+        <a href="#">Jobs and internships</a>
+        <a href="#">Investors</a>
+      </div>
+      <div class="footer-col">
+        <h4>Help</h4>
+        <a href="#">Help Center</a>
+        <a href="#">Using X</a>
+        <a href="#">Managing your account</a>
+        <a href="#">Rules and policies</a>
+        <a href="#">Contact us</a>
+      </div>
+      <div class="footer-col">
+        <h4>Developer resources</h4>
+        <a href="#">Developer home</a>
+        <a href="#">Documentation</a>
+        <a href="#">Forums</a>
+        <a href="#">Communities</a>
+        <a href="#">Engineering blog</a>
+        <a href="#">Developer terms</a>
+      </div>
+      <div class="footer-col">
+        <h4>Business resources</h4>
+        <a href="#">Advertise</a>
+        <a href="#">X for business</a>
+        <a href="#">Resources and guides</a>
+      </div>
+    </div>
+  </div>
+</footer>
 
 <script src="script.js"></script>
 </body>
