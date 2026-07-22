@@ -1,10 +1,24 @@
 # Personal / sensitive reference screenshots (real name, student ID, fees, attendance)
 ERP/reference/ncu-brand/*.png
 
+# Node / JS Dependencies & Artifacts
+node_modules/
+**/node_modules/
+dist/
+**/dist/
+dist-ssr/
+**/dist-ssr/
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
 # Local env / virtualenv
 .venv-run-win/
 .venv/
 venv/
+ENV/
+env/
 
 # Local secrets / credentials
 .env
@@ -14,9 +28,14 @@ venv/
 *credentials*
 *secret*
 
-# Local-only Claude settings (may contain machine-specific paths/permissions)
+# Local-only AI / Editor settings
 .claude/settings.local.json
+.vscode/*
+!.vscode/extensions.json
+.idea/
 
-# OS / editor cruft
+# OS / System cruft
 .DS_Store
 Thumbs.db
+desktop.ini
+
