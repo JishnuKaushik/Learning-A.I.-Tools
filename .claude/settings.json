@@ -39,7 +39,10 @@
       "Bash(\"./.venv-run/bin/python\" -m pip install -vvv playwright)",
       "Bash(\"./.venv-run/bin/python\" -c \"import sysconfig,platform; print\\(sysconfig.get_platform\\(\\)\\); print\\(platform.machine\\(\\)\\)\")",
       "PowerShell(py --list 2>&1)",
-      "PowerShell(py -3 --version 2>&1)"
+      "PowerShell(py -3 --version 2>&1)",
+      "Bash(chromium-cli --session ncu-erp)",
+      "Bash(node -e \"require\\('playwright'\\)\")",
+      "Bash(npm ls *)"
     ]
   }
 }
