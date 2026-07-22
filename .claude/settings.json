@@ -42,7 +42,10 @@
       "PowerShell(py -3 --version 2>&1)",
       "Bash(chromium-cli --session ncu-erp)",
       "Bash(node -e \"require\\('playwright'\\)\")",
-      "Bash(npm ls *)"
+      "Bash(npm ls *)",
+      "PowerShell(node --version)",
+      "PowerShell(npx --version)",
+      "PowerShell(python --version)"
     ]
   }
 }
