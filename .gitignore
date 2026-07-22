@@ -1,0 +1,22 @@
+# Personal / sensitive reference screenshots (real name, student ID, fees, attendance)
+ERP/reference/ncu-brand/*.png
+
+# Local env / virtualenv
+.venv-run-win/
+.venv/
+venv/
+
+# Local secrets / credentials
+.env
+.env.*
+*.pem
+*.key
+*credentials*
+*secret*
+
+# Local-only Claude settings (may contain machine-specific paths/permissions)
+.claude/settings.local.json
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
