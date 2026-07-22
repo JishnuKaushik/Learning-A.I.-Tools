@@ -45,7 +45,22 @@
       "Bash(npm ls *)",
       "PowerShell(node --version)",
       "PowerShell(npx --version)",
-      "PowerShell(python --version)"
+      "PowerShell(python --version)",
+      "PowerShell(Invoke-WebRequest -Uri \"http://localhost:8731/dashboard.html\" -UseBasicParsing -TimeoutSec 5)",
+      "Bash(curl -s http://localhost:8731/dashboard.html -o /dev/null -w \"%{http_code}\\\\n\")",
+      "PowerShell(Start-Process \"E:\\\\GitHub\\\\Learning-A.I.-Tools\\\\Webpage\\\\index.html\")",
+      "Bash(/e/MSYS2/usr/bin/pacman.exe -S --noconfirm mingw-w64-ucrt-x86_64-nodejs)",
+      "Bash(/e/MSYS2/ucrt64/bin/node.exe --version)",
+      "Bash(/e/MSYS2/ucrt64/bin/npm.cmd --version)",
+      "Bash(find /c/Users/jishn -maxdepth 4 -newermt '-10 minutes' \\\\\\( -iname '*.png' -o -iname '*.jpg' -o -iname '*.jpeg' \\\\\\) 2>/dev/null | grep -v -i \"AppData/Local/Temp/claude\" | head -30)",
+      "Read(//c/Users/jishn/**)",
+      "Bash(SCRATCH=\"/c/Users/jishn/AppData/Local/Temp/claude/e--GitHub-Learning-A-I--Tools/8cac427b-d22f-48be-ba80-e379ac079b13/scratchpad\" *)",
+      "Read(//c/Users/jishn/AppData/Local/Temp/claude/e--GitHub-Learning-A-I--Tools/8cac427b-d22f-48be-ba80-e379ac079b13/scratchpad/vite-scaffold/**)",
+      "Bash(find /c/Users/jishn/Downloads /c/Users/jishn/Pictures /c/Users/jishn/Desktop /c/Users/jishn/OneDrive/Pictures -maxdepth 3 \\\\\\( -iname '*.png' -o -iname '*.jpg' -o -iname '*.jpeg' \\\\\\) -newermt '-30 minutes' 2>/dev/null | head -30)",
+      "Read(//c/Users/jishn/Downloads/**)",
+      "Bash(find /c/Users/jishn/AppData/Local/Temp -maxdepth 3 \\\\\\( -iname '*.png' -o -iname '*.jpg' -o -iname '*.jpeg' -o -iname '*.webp' \\\\\\) -newermt '-15 minutes' 2>/dev/null | head -30 *)",
+      "Read(//c/Users/jishn/AppData/Local/Temp/**)",
+      "Read(//c/Users/jishn/AppData/**)"
     ]
   }
 }
